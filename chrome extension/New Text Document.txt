@@ -1,0 +1,5 @@
+"content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js; object-src 'self'"
+   "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js; object-src 'self'"
+"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://auth.firebase.com; object-src 'self'"
+"content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio.com; object-src 'self'; "
+  "content_security_policy": "script-src 'self' https://www.gstatic.com https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"

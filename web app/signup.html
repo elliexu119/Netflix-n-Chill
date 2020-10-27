@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Netflix-n-Chill - Watch Anywhere With Anyone</title>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style-signup.css">
+      </head>
+
+<body>
+    <header class="showcase">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div>
+
+            <div class="showcase-content">
+                <div class="formm">
+                    <form id="signup-form">
+                        <h1>Sign Up</h1>
+                        <div class="info">
+                            <input class="email" type="email" id="email" placeholder="Email" name="email"> <br>
+                            <input class="email" type="password" id="pwd" placeholder="Password" name="pswd">
+                        </div>
+                        <div class="btn">
+                            <button class="btn-primary" type="submit">Sign Up</button>
+                            <p id="warn"></p>
+                        </div>
+
+                    </form>
+    
+                <div class="fcbk">
+                    <a href="https://facebook.com">
+                        <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook">
+                        </a>
+                    <p>Login with Facebook</p>
+                </div>
+                </div>
+                <div class="signup">
+                    <p>Already have an account?</p>
+                    <a href="signin.html">Sign in</a>
+                </div>
+                <div class="more">
+                    <p>
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a> 
+                    </p>
+                </div>
+
+
+            </div>
+
+       
+            <footer>
+                
+                <div class="ftr-content">
+                    <div class="contact">
+                        <a href="#">Quesions? Contact us.</a>
+                    </div>
+                    <div class="ftr">
+                        <a href="#">Gift Card Terms</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Statement</a>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>English</option>
+                            <option>العربية</option>
+                            <option>Français</option>
+                            
+                        </select>
+                    </div>
+                </div>
+               
+            </footer>
+       
+    </header>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDBkxQwPlVqAntHabVKC6l2uAMp-E1a2Ic",
+    authDomain: "netflix-n-chi.firebaseapp.com",
+    databaseURL: "https://netflix-n-chi.firebaseio.com",
+    projectId: "netflix-n-chi",
+    storageBucket: "netflix-n-chi.appspot.com",
+    messagingSenderId: "225472206934",
+    appId: "1:225472206934:web:2100d217a60b2d85d243f7",
+    measurementId: "G-1GXMK6BW2N"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+//db.settings({ timestampsInSnapshots: true});
+  </script>
+    <script src="signUp.js"></script>
+    <script src="Assessment.js"></script>
+
+</body>
+</html>

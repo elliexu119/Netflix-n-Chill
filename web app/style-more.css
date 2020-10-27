@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  padding: 0.5em 0.5rem;
+  border: 0;
+  width: 100%;
+  background-color: grey;
+  border-radius: 0.15em;
+  color: #fff;
+  font-family: "Sansita Swashed", cursive;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  outline: none;
+}
+button:active {
+  box-shadow: inset 0 0 6px #666666;
+}
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0.5px 0.5px 6px black;
+}
+.card .img-container, .card__content {
+  -webkit-transition: width 1s, -webkit-transform 1s;
+  transition: width 1s, -webkit-transform 1s;
+  transition: width 1s, transform 1s;
+  transition: width 1s, transform 1s, -webkit-transform 1s;
+}
+.card .img-container {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+.card__bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5em 0.2em;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.card__bar svg {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.card__bar:hover {
+  opacity: 1;
+}
+.card__content {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 0 12px 12px 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.card__title {
+  font-family: "Sansita Swashed", cursive;
+  margin-top: 0;
+}
+.card p {
+  margin-top: 0;
+  line-height: 1.4;
+}
+.card button {
+  margin-top: auto;
+}
+
+.button-clicked{
+  background: green;
+}

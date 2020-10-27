@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Netflix-n-Chill - Watch Anywhere With Anyone</title>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style-signup.css">
+      </head>
+
+<body>
+    <header class="showcase">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div>
+
+            <div class="showcase-content" style="padding-top: 30px;">
+                <div class="formm">
+                    <form id="ass-form">
+                        <h1 style="margin-bottom: 20px;">Registration</h1>
+                        <div class="info">
+                            <input class="email" type="text" id="age" placeholder="How old are you?" name="age" style="margin-bottom: 20px;"> <br>
+                            <input class="email" type="email" id="email" placeholder="Confirm email" name="email" style="margin-bottom: 20px;"> <br>
+                            <input class="email" type="text" id="distance" placeholder="Distance willing to travel (in km)" name="distance" style="margin-bottom: 20px;">
+                            <input class="email" type="text" id="fage" placeholder="Age of friend matches (e.g., 20-36)" name="fage" style="margin-bottom: 20px;"> <br>
+                            <input class="email" type="text" id="rage" placeholder="Age of romantic matches (e.g., 20-36)" name="rage" style="margin-bottom: 20px;">
+                            <div>Preferred genre:
+                                <select class="email" id = "genre" style="margin-bottom: 20px; width: 50%"> 
+                                    <option>Romance</option>
+                                    <option>Horror</option>
+                                    <option>Comedy</option>
+                                    <option>Action</option>
+                                    <option>Science Fiction</option>
+                                    <option>Fantasy</option> 
+                                    <option>Animation</option>
+                                    <option>Documentary</option>                                    
+                                </select>
+                            </div>
+                            <a href="C:\Users\ellix\Desktop\things\eng projects\hackathons\Netflix-n-Chill\chrome extension" target="_blank" download>Chrome Extension Folder</a>
+                        </div>
+                        <div class="btn">
+                            <button style="margin-top: 15px;" class="btn-primary" type="submit">Submit</button>
+                            <p id="warn"></p>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+
+       
+            <footer>
+                
+                <div class="ftr-content">
+                    <div class="contact">
+                        <a href="#">Quesions? Contact us.</a>
+                    </div>
+                    <div class="ftr">
+                        <a href="#">Gift Card Terms</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Statement</a>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>English</option>
+                            <option>العربية</option>
+                            <option>Français</option>
+                            
+                        </select>
+                    </div>
+                </div>
+               
+            </footer>
+       
+    </header>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDBkxQwPlVqAntHabVKC6l2uAMp-E1a2Ic",
+    authDomain: "netflix-n-chi.firebaseapp.com",
+    databaseURL: "https://netflix-n-chi.firebaseio.com",
+    projectId: "netflix-n-chi",
+    storageBucket: "netflix-n-chi.appspot.com",
+    messagingSenderId: "225472206934",
+    appId: "1:225472206934:web:2100d217a60b2d85d243f7",
+    measurementId: "G-1GXMK6BW2N"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+//db.settings({ timestampsInSnapshots: true});
+  </script>
+  <script src="Assessment.js"></script>
+
+
+</body>
+</html>
